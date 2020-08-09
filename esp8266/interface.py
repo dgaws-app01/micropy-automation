@@ -1,4 +1,4 @@
 import network
 
 
-print('Library Loaded : %s'%(__name__))
+print('Loaded : %s'%(__name__))
