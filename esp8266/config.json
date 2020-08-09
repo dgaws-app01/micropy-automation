@@ -1,11 +1,11 @@
 {
   "interface" : 
   {
-    "interfaceMode": "Should be 'ROOT' or 'BRANCH' or 'LEAF'. Root = starting, conects to main wifi | Branch = Connects between Root & Leaf | Leaf = End points",
-    "interfaceName": "Proposed interfae Name",
-    "interfaceIndex": "-1 if no index, 0 -> N for 1 -> (N+1) index", 
-    "parentInterfaceName" : "<parent interface name>",
-    "parentInterfaceIndex" : "<parent interface index>",
+    "mode": "Should be 'ROOT' or 'BRANCH' or 'LEAF'. Root = starting, conects to main wifi | Branch = Connects between Root & Leaf | Leaf = End points",
+    "name": "Proposed interfae Name",
+    "index": "-1 if no index, 0 -> N for 1 -> (N+1) index", 
+    "parentName" : "<parent interface name>",
+    "parentIndex" : "<parent interface index>",
     "STA-SSID" : "<WIFI SSID>",
     "STA-Pswd" : "<WIFI password>",
     "AP-SSID" : "<Access points proposed SSID>",
