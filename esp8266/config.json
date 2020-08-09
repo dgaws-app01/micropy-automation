@@ -1,0 +1,11 @@
+{
+  "interfaceMode": "Should be 'MASTER' or 'SLAVE'",
+  "interfaceName": "Proposed interfae Name",
+  "interfaceIndex": "-1 if no index, 0 -> N for 1 -> (N+1) index", 
+  "parentInterfaceName" : "<parent interface name>",
+  "parentInterfaceIndex" : "<parent interface index>",
+  "STA-SSID" : "<WIFI SSID>",
+  "STA-Pswd" : "<WIFI password>",
+  "AP-SSID" : "<Access points proposed SSID>",
+  "AP-Pswd" : "<Access points proposed password>"
+}
