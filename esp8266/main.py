@@ -2,6 +2,8 @@ import machine
 import time
 from testimp import p1
 
+strt_tm = time.ticks_ms()
+
 o = machine.Pin.OUT
 i = machine.Pin.IN
 
@@ -15,7 +17,8 @@ def start():
     pn()
     p1(p)
 
-print('Loaded : %s'%(__name__))
+end_tm = time.ticks_ms()
+print('%d : Loaded "%s" | MSec Taken : %d '%(strt_tm, __name__, end_tm - strt_tm))
 
 if __name__ == "__main__" or __name__ == "main":
     start()
