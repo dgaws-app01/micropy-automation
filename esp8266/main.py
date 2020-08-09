@@ -7,14 +7,15 @@ i = machine.Pin.IN
 
 p = machine.Pin(2, o)
 
-print('Imported : %s'%(__name__))
-
 def pn():
     print(__name__)
 
 def start():
+    print('Starting: %s'%(__name__))    
     pn()
     p1(p)
+
+print('Loaded : %s'%(__name__))
 
 if __name__ == "__main__" or __name__ == "main":
     start()
