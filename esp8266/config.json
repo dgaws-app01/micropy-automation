@@ -2,13 +2,11 @@
   "interface" : 
   {
     "mode": "Should be 'ROOT' or 'BRANCH' or 'LEAF'. Root = starting, conects to main wifi | Branch = Connects between Root & Leaf, also works as end points | Leaf = End points",
-    "name": "Proposed interfae Name",
+    "name": "Proposed interfae Name, AP name as well",
     "index": "-1 if no index, 0 -> N for 1 -> (N+1) index", 
-    "parentName" : "<parent interface name>",
+    "parentName" : "<parent interface name, wifi SSID if mode=ROOt>",
     "parentIndex" : "<parent interface index>",
-    "STA-SSID" : "<WIFI SSID>",
-    "STA-Pswd" : "<WIFI password>",
-    "AP-SSID" : "<Access points proposed SSID>",
+    "Pswd" : "<WIFI password>",
     "AP-Pswd" : "<Access points proposed password>"
   }
 }
