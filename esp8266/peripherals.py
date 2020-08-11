@@ -10,7 +10,7 @@ class BoardPins:
   def off(int pin, int delayMS = 0):
     pass
 
-  def isOn():
+  def isOn(int pin):
     pass
 
   def volt(int pin, int volt, int durationMS = 0, int delayMS = 0):
