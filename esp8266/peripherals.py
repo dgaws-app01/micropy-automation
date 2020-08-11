@@ -15,7 +15,7 @@ class BoardPins:
   def isOn(int pin):
     pass
   
-  def free():
+  def release():
     pass
 
   def volt(int pin, int volt, int durationMS = 0, int delayMS = 0):
