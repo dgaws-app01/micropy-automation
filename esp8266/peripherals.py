@@ -1,6 +1,8 @@
 import machine;
 
 class BoardPins:
+  busyPins = []
+  
   def __init__(self):
     pass
   
@@ -11,6 +13,9 @@ class BoardPins:
     pass
 
   def isOn(int pin):
+    pass
+  
+  def free():
     pass
 
   def volt(int pin, int volt, int durationMS = 0, int delayMS = 0):
