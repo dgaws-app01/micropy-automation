@@ -20,3 +20,6 @@ class BoardPins:
 
   def volt(int pin, int volt, int durationMS = 0, int delayMS = 0):
     pass
+
+  def morse():
+    pass
