@@ -1,6 +1,16 @@
+# Interface.py
 import time
 import network
-#import config file
+
+# Parse Config File
+try:
+    f = open("config.json", "r")
+    s = f.read()
+    import json
+    j = json.loads(s)
+    
+except e:
+    print(e)
 
 strt_tm = time.ticks_ms()
 
