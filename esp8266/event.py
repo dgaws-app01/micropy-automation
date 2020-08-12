@@ -1,10 +1,15 @@
 class Event:
-  strtTm:
+
   def __init__(self, evtName, strtNow=True):
-    pass
+    self.evtName = evtName
+    if strtNow:
+      import time
+      self.strtTm = time.ticks_us()
+    
   
   def start():
-    pass
+    import time
+    self.strtTm = time.ticks_us()
   
   def end():
     pass
