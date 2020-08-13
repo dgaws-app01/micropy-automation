@@ -32,15 +32,18 @@ class BoardPinOut:
             self.pin.off()
     
     
-D0 = BoardPinOut(16, "D0", machine.Pin.OUT, True, "wake,redLED")
-D1 = BoardPinOut(5, "D0", machine.Pin.OUT, True, "wake,redLED")
+D0 = BoardPinOut(16, "D0", machine.Pin.OUT, True, "Wake,redLED")
+D1 = BoardPinOut(5, "D1", machine.Pin.OUT, True, "SCL")
+D2 = BoardPinOut(4, "D2", machine.Pin.OUT, True, "SDA")
+D3 = BoardPinOut(0, "D3", machine.Pin.OUT, True, "FLASH")
 
+D = D3
 #d0 = {gpio:16, mode:machine.Pin.OUT, busy:True, pin:machine.Pin( gpiopin , machine.Pin.OUT), aka: "wake,redLED"}
 
-D1.on()
+D.on()
 time.sleep(1)
-D1.off()
+D.off()
 time.sleep(1)
-D1.on()
+D.on()
 time.sleep(1)
-D1.off()
+D.off()
