@@ -41,10 +41,10 @@ D4 = BoardPinOut(2, "D4", machine.Pin.OUT, True, "TXD1,BlueLED", "R11")
 D = D4
 #d0 = {gpio:16, mode:machine.Pin.OUT, busy:True, pin:machine.Pin( gpiopin , machine.Pin.OUT), aka: "wake,redLED"}
 
-D.on()
-time.sleep(1)
-D.off()
-time.sleep(1)
-D.on()
-time.sleep(1)
-D.off()
+i = 0
+while i<20:
+    D.on()
+    time.sleep_ms(50)
+    D.off()
+    time.sleep_ms(50)
+    i = i + 1
