@@ -52,7 +52,7 @@ D8 = BoardPinOut(15, "D8", machine.Pin.OUT, True, "CS", "R05")
 DA = D8
 DB = D7
 
-i = 0
+i = 100
 while i<20:
     DA.on()
     time.sleep_ms(50)
@@ -64,4 +64,8 @@ while i<20:
     time.sleep_ms(50)
     i = i + 1
     
-D2.on()    
+D2.on()   
+time.sleep(1)
+D1.off()
+time.sleep(2)
+D3.on()
