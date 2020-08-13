@@ -43,8 +43,10 @@ D6 = BoardPinOut(12, "D6", machine.Pin.OUT, True, "MISO", "R07")
 D7 = BoardPinOut(13, "D7", machine.Pin.OUT, True, "MOSI", "R06")
 D8 = BoardPinOut(15, "D8", machine.Pin.OUT, True, "CS", "R05")
 
+RX = BoardPinOut(3, "RX", machine.Pin.OUT, True, "RXD0", "R04")
+TX = BoardPinOut(1, "TX", machine.Pin.OUT, True, "TXD0", "R03")
 
-D = D4
+D = D8
 #d0 = {gpio:16, mode:machine.Pin.OUT, busy:True, pin:machine.Pin( gpiopin , machine.Pin.OUT), aka: "wake,redLED"}
 
 i = 0
