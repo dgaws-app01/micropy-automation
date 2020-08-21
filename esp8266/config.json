@@ -1,12 +1,46 @@
 {
   "interface" : 
   {
-    "mode": "Should be 'ROOT' or 'BRANCH' or 'LEAF'. Root = starting, conects to main wifi | Branch = Connects between Root & Leaf, also works as end points | Leaf = End points",
-    "name": "Proposed interfae Name, AP name as well, No Space Allowed",
-    "index": "-1 if no index, 0 -> N for 1 -> (N+1) index", 
-    "parentName" : "<parent interface name, wifi SSID if mode=ROOt>",
-    "parentIndex" : "<parent interface index>",
-    "Pswd" : "<WIFI password>",
-    "AP-Pswd" : "<Access points proposed password>"
+    "mode": "ROOT",
+    "name": "dgsiotroot",
+    "index": "-1", 
+    "parentName" : "DGsHome",
+    "parentIndex" : "-1",
+    "pswd" : "dgshome123",
+    "ap-pswd" : "dgsiot12345"
   }
 }
+
+/*
+Expected values and explanations : 
+mode
+  Should be 'ROOT' or 'BRANCH' or 'LEAF'. 
+  Root = starting, conects to main wifi | Branch = Connects between Root & Leaf, also works as end points | Leaf = End points
+
+name
+  Proposed interfae Name
+  AP name as well
+  No Space Allowed
+  
+index
+  -1 if no index
+  Otherwise Zero-Based Index
+  Left Two Zero Padded
+  
+parentName
+  when <mode>=BRANCH or LEAF then parent interface name
+  when <mode>=ROOt then wifi SSID
+  ? searches for wifi and sets a SSID as directed later/via API
+
+parentIndex
+  when <mode>=BRANCH or LEAF parent interface index
+  Otherwise -1
+  
+pswd
+  when <mode>=ROOt then WIFI password
+  Otherwise "dgsiot12345"
+  
+ap-pswd
+  "dgsiot12345"
+
+*/
